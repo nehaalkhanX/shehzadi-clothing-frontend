@@ -48,14 +48,14 @@ const Product = () => {
         {/* Product Info */}
         <div className='flex-1'>
           <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
-          <div className='flex items-center gap-1 mt-2'>
+          {/* <div className='flex items-center gap-1 mt-2'>
             <img src={assets.star_icon} alt="" className="w-3 5" />
             <img src={assets.star_icon} alt="" className="w-3 5" />
             <img src={assets.star_icon} alt="" className="w-3 5" />
             <img src={assets.star_icon} alt="" className="w-3 5" />
             <img src={assets.star_dull_icon} alt="" className="w-3 5" />
             <p className='pl-2'>(122)</p>
-          </div>
+          </div> */}
           <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
           <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
           <div className='flex flex-col gap-4 my-8'>
@@ -80,11 +80,15 @@ const Product = () => {
       <div className='mt-20'>
         <div className='flex'>
           <b className='border px-5 py-3 text-sm'>Description</b>
-          <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
+          
         </div>
         <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-          <p>An e-commerce website is an online platform that facilitates the buying and selling of products or services over the internet.</p>
-          <p>E-commerce websites typically display products or services along with detailed descriptions, images, prices, and any available variations.</p>
+          <p>Crafted for everyday comfort and style. Made from quality fabric with a fit designed for daily wear, this piece is an easy addition to your wardrobe.</p>
+          <p>Material: Cotton blend
+Fit: Regular fit
+Care: Machine wash cold. Tumble dry low. Do not bleach. Iron on low heat if needed.
+Country of Origin: India
+Refer to the size chart for accurate measurements. Slight color variation may occur due to screen settings and lighting.</p>
         </div>
       </div>
 
